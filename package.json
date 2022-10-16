@@ -1,0 +1,41 @@
+{
+  "name": "nodejs-course",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "lint:fix": "npm run lint -- --fix",
+    "prettier": "prettier --check .",
+    "prettier:fix": "prettier --write .",
+    "prepare": "husky install"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Er4ik/nodejs-course.git"
+  },
+  "author": "Ervin Osmanov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Er4ik/nodejs-course/issues"
+  },
+  "homepage": "https://github.com/Er4ik/nodejs-course#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "@typescript-eslint/parser": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-metarhia": "^8.1.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-sonarjs": "^0.16.0",
+    "husky": "^8.0.1",
+    "lint-staged": "^13.0.3",
+    "prettier": "2.7.1",
+    "ts-node": "^10.9.1",
+    "typescript": "^4.8.4"
+  },
+  "dependencies": {},
+  "lint-staged": {
+    "*.ts": "eslint --fix",
+    "*.{ts,md}": "prettier --write"
+  }
+}
