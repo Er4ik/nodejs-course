@@ -1,14 +1,15 @@
 {
   "name": "nodejs-course",
   "version": "1.0.0",
-  "type": "module",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint --ext .js,.ts .",
-    "lint:fix": "npm run lint -- --fix",
-    "prettier": "prettier --check .",
-    "prettier:fix": "prettier --write .",
+    "start": "ts-node ./src/main.ts",
+    "build": "tsc",
+    "lint": "eslint --ext .js,.ts . --ignore-path .gitignore",
+    "lint:fix": "npm run lint -- --fix --ignore-path .gitignore",
+    "prettier": "prettier --check . --ignore-path .gitignore",
+    "prettier:fix": "prettier --write . --ignore-path .gitignore",
     "prepare": "husky install"
   },
   "repository": {
