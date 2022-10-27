@@ -6,7 +6,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "start": "node src/main.js",
+    "start": "node api/index.js",
     "lint": "eslint --ext .js,.ts . --ignore-path .gitignore",
     "lint:fix": "npm run lint -- --fix --ignore-path .gitignore",
     "prettier": "prettier --check . --ignore-path .gitignore",
