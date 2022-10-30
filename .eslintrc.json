@@ -16,7 +16,5 @@
     "sourceType": "module"
   },
   "plugins": ["@typescript-eslint", "sonarjs"],
-  "rules": {
-    "space-before-function-paren": ["warn", "never"]
-  }
+  "rules": {}
 }
